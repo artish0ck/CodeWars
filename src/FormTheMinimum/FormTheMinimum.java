@@ -1,4 +1,4 @@
-/*
+package FormTheMinimum;/*
 Task
 Given a list of digits, return the smallest number that could be formed from these digits,
 using the digits only once (ignore duplicates).
@@ -20,7 +20,7 @@ public class FormTheMinimum {
         String uniqueSortedString = Arrays.stream(values)
                 .distinct()
                 .sorted()
-                .mapToObj(x -> String.valueOf(x)) // or Integer.toString(x)
+                .mapToObj(String::valueOf) // or Integer.toString(x)
                 .collect(Collectors.joining());
 
         return Integer.parseInt(uniqueSortedString); // 1238

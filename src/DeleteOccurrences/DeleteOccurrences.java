@@ -1,4 +1,4 @@
-/*
+package DeleteOccurrences;/*
 Enough is enough!
 Alice and Bob were on a holiday. Both of them took many pictures of the places they've been, and now they want to show
 Charlie their entire collection. However, Charlie doesn't like these sessions, since the motif usually repeats.

@@ -1,4 +1,4 @@
-/*
+package DataReverse;/*
 A stream of data is received and needs to be reversed.
 
 Each segment is 8 bits long, meaning the order of these segments needs to be reversed, for example:
@@ -22,10 +22,10 @@ import java.util.Arrays;
 public class DataReverse {
     public static void main(String[] args) {
         int[] input = {1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0};
-        System.out.println(Arrays.toString(DataReverse(input)));
+        System.out.println(Arrays.toString(dataReverse(input)));
     }
 
-    public static int[] DataReverse(int[] data) {
+    public static int[] dataReverse(int[] data) {
         int[] reversedData = new int[data.length];
         for (int i = data.length - 8, j = 0; i >= 0; i -= 8, j += 8) {
             System.arraycopy(data, i, reversedData, j, 8);
